@@ -31,14 +31,14 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 278215023;
-			PBXWorkspaceStateSaveDate = 278215023;
+			PBXPerProjectTemplateStateSaveDate = 278231658;
+			PBXWorkspaceStateSaveDate = 278231658;
 		};
 		perUserProjectItems = {
-			E57597E51095413D0013CEF7 /* PBXTextBookmark */ = E57597E51095413D0013CEF7 /* PBXTextBookmark */;
-			E575981F1095474E0013CEF7 /* PBXTextBookmark */ = E575981F1095474E0013CEF7 /* PBXTextBookmark */;
-			E57598211095474E0013CEF7 /* PBXTextBookmark */ = E57598211095474E0013CEF7 /* PBXTextBookmark */;
-			E5759826109564160013CEF7 /* PBXTextBookmark */ = E5759826109564160013CEF7 /* PBXTextBookmark */;
+			E57597E51095413D0013CEF7 = E57597E51095413D0013CEF7 /* PBXTextBookmark */;
+			E575981F1095474E0013CEF7 = E575981F1095474E0013CEF7 /* PBXTextBookmark */;
+			E57598211095474E0013CEF7 = E57598211095474E0013CEF7 /* PBXTextBookmark */;
+			E5759826109564160013CEF7 = E5759826109564160013CEF7 /* PBXTextBookmark */;
 		};
 		sourceControlManager = E57597C0109539730013CEF7 /* Source Control */;
 		userBuildSettings = {
@@ -131,6 +131,7 @@
 	};
 	E57598201095474E0013CEF7 /* NSProcessInfo.h */ = {
 		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
 		name = NSProcessInfo.h;
 		path = /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Foundation.framework/Versions/C/Headers/NSProcessInfo.h;
 		sourceTree = "<absolute>";

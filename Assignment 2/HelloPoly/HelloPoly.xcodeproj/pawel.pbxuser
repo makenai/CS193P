@@ -23,7 +23,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					341,
+					927,
 					20,
 					48.16259765625,
 					43,
@@ -42,6 +42,16 @@
 			};
 			PBXPerProjectTemplateStateSaveDate = 278399904;
 			PBXWorkspaceStateSaveDate = 278399904;
+		};
+		perUserProjectItems = {
+			E504D2B510982914004E7827 /* XCBuildMessageTextBookmark */ = E504D2B510982914004E7827 /* XCBuildMessageTextBookmark */;
+			E504D2B610982914004E7827 /* PBXTextBookmark */ = E504D2B610982914004E7827 /* PBXTextBookmark */;
+			E504D2B910982934004E7827 /* XCBuildMessageTextBookmark */ = E504D2B910982934004E7827 /* XCBuildMessageTextBookmark */;
+			E504D2BA10982934004E7827 /* PBXTextBookmark */ = E504D2BA10982934004E7827 /* PBXTextBookmark */;
+			E504D2C110982964004E7827 /* PBXTextBookmark */ = E504D2C110982964004E7827 /* PBXTextBookmark */;
+			E504D2C310982964004E7827 /* PBXTextBookmark */ = E504D2C310982964004E7827 /* PBXTextBookmark */;
+			E504D2C410982964004E7827 /* PBXTextBookmark */ = E504D2C410982964004E7827 /* PBXTextBookmark */;
+			E504D2C510982964004E7827 /* PBXTextBookmark */ = E504D2C510982964004E7827 /* PBXTextBookmark */;
 		};
 		sourceControlManager = E504D28010980BA8004E7827 /* Source Control */;
 		userBuildSettings = {
@@ -92,15 +102,99 @@
 	E504D29110981EB8004E7827 /* Controller.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1105, 564}}";
-			sepNavSelRange = "{232, 8}";
-			sepNavVisRange = "{0, 421}";
+			sepNavSelRange = "{503, 0}";
+			sepNavVisRange = "{0, 509}";
 		};
 	};
 	E504D29210981EB8004E7827 /* Controller.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1105, 564}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 273}";
+			sepNavSelRange = "{751, 0}";
+			sepNavVisRange = "{0, 1015}";
 		};
+	};
+	E504D2B510982914004E7827 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "'Controller' may not respond to '-updateInterface'";
+		fRef = E504D29210981EB8004E7827 /* Controller.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 18;
+		rType = 1;
+	};
+	E504D2B610982914004E7827 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E504D29210981EB8004E7827 /* Controller.m */;
+		name = "Controller.m: 18";
+		rLen = 0;
+		rLoc = 426;
+		rType = 0;
+		vrLen = 533;
+		vrLoc = 219;
+	};
+	E504D2B910982934004E7827 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Method definition not in @implementation context";
+		fRef = E504D29210981EB8004E7827 /* Controller.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 0;
+		rLoc = 8;
+		rType = 1;
+	};
+	E504D2BA10982934004E7827 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E504D29210981EB8004E7827 /* Controller.m */;
+		name = "Controller.m: 10";
+		rLen = 0;
+		rLoc = 157;
+		rType = 0;
+		vrLen = 498;
+		vrLoc = 20;
+	};
+	E504D2C110982964004E7827 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E504D2C210982964004E7827 /* UINibDeclarations.h */;
+		name = "UINibDeclarations.h: 9";
+		rLen = 17;
+		rLoc = 117;
+		rType = 0;
+		vrLen = 188;
+		vrLoc = 0;
+	};
+	E504D2C210982964004E7827 /* UINibDeclarations.h */ = {
+		isa = PBXFileReference;
+		name = UINibDeclarations.h;
+		path = /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UINibDeclarations.h;
+		sourceTree = "<absolute>";
+	};
+	E504D2C310982964004E7827 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E504D29110981EB8004E7827 /* Controller.h */;
+		name = "Controller.h: 20";
+		rLen = 0;
+		rLoc = 503;
+		rType = 0;
+		vrLen = 509;
+		vrLoc = 0;
+	};
+	E504D2C410982964004E7827 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E504D29210981EB8004E7827 /* Controller.m */;
+		name = "Controller.m: 10";
+		rLen = 0;
+		rLoc = 157;
+		rType = 0;
+		vrLen = 1014;
+		vrLoc = 0;
+	};
+	E504D2C510982964004E7827 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = E504D29210981EB8004E7827 /* Controller.m */;
+		name = "Controller.m: 26";
+		rLen = 0;
+		rLoc = 751;
+		rType = 0;
+		vrLen = 1015;
+		vrLoc = 0;
 	};
 }

@@ -17,4 +17,5 @@
 }
 - (IBAction)decrease:(id)sender;
 - (IBAction)increase:(id)sender;
+- (void)updateInterface;
 @end

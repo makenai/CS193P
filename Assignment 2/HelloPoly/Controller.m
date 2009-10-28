@@ -7,6 +7,7 @@
 
 #import "Controller.h"
 
+
 @implementation Controller
 - (IBAction)decrease:(id)sender {
 	polygonShape.numberOfSides = numberOfSidesLabel.text.integerValue - 1;

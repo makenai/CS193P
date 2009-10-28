@@ -1,88 +1,0 @@
-TWhatATool
-v7
-r0
-t278216800.816583
-cCheck dependencies
-cProcessPCH /var/folders/Ev/EvwqP1w4HKSQHnU2UprIfE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WhatATool_Prefix-caclcdlaluirgifbfopomcuhoemf/WhatATool_Prefix.pch.gch WhatATool_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/WhatATool.build/Debug/WhatATool.build/Objects-normal/x86_64/WhatATool.o "/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/WhatATool.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
-
-N/Developer/SDKs/MacOSX10.6.sdk
-c000000004ABBF0FD00000000000000EE
-t1253830909
-s238
-
-N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000004AB9AA2700000000000013E6
-t1253681703
-s5094
-
-N/System/Library/Frameworks/Foundation.framework/Foundation
-c000000004A600BCB0000000000B37450
-t1247808459
-s11760720
-
-N/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/WhatATool.m
-c000000004AE508C10000000000000173
-t1256523969
-s371
-i<Foundation/Foundation.h>
-
-N/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/WhatATool_Prefix.pch
-c000000004AE501EF00000000000000A0
-t1256522223
-s160
-i<Foundation/Foundation.h>
-
-N/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/build/Debug/WhatATool
-t2
-s0
-
-N/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/build/WhatATool.build/Debug/WhatATool.build/Objects-normal/x86_64/WhatATool.LinkFileList
-c000000004AE508C4000000000000008E
-t1256523972
-s142
-
-N/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/build/WhatATool.build/Debug/WhatATool.build/Objects-normal/x86_64/WhatATool.o
-t2
-s0
-
-N/var/folders/Ev/EvwqP1w4HKSQHnU2UprIfE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WhatATool_Prefix-caclcdlaluirgifbfopomcuhoemf/WhatATool_Prefix.pch.gch
-t1256523999
-s41405200
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies278216772#278216772#0(0"0(0#1#0"7947009927035180032#0"0#
-
-CCompileC build/WhatATool.build/Debug/WhatATool.build/Objects-normal/x86_64/WhatATool.o "/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/WhatATool.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s278216799.661429
-e278216800.815792
-r0
-xCompileC
-xbuild/WhatATool.build/Debug/WhatATool.build/Objects-normal/x86_64/WhatATool.o
-x/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/WhatATool.m
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-o/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/WhatATool.m:3: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PrintPathInfo'
-o/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/WhatATool.m: In function 'main':
-o/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/WhatATool.m:11: warning: implicit declaration of function 'PrintPathInfo'
-lSLF07#2@83"Compile /Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/WhatATool.m278216799#278216800#0(393"/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/WhatATool.m:3: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PrintPathInfo'/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/WhatATool.m: In function 'main':/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/WhatATool.m:11: warning: implicit declaration of function 'PrintPathInfo'2(4@71"Expected '=', ',', ';', 'asm' or '__attribute__' before 'PrintPathInfo'278216800#0#158#0(6@75"/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/WhatATool.m278216769#3#0#3#0#19"expected * before *0(22@48"Implicit declaration of function 'PrintPathInfo'278216800#255#138#0(6@75"/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/WhatATool.m278216769#11#0#11#0#36"implicit declaration of function '*'0(0#0#75"/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/WhatATool.m8029405159545332736#1797"    cd "/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/build/WhatATool.build/Debug/WhatATool.build/WhatATool-generated-files.hmap" "-I/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/build/WhatATool.build/Debug/WhatATool.build/WhatATool-own-target-headers.hmap" "-I/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/build/WhatATool.build/Debug/WhatATool.build/WhatATool-all-target-headers.hmap" -iquote "/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/build/WhatATool.build/Debug/WhatATool.build/WhatATool-project-headers.hmap" "-F/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/build/Debug" "-I/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/build/Debug/include" "-I/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/build/WhatATool.build/Debug/WhatATool.build/DerivedSources/x86_64" "-I/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/build/WhatATool.build/Debug/WhatATool.build/DerivedSources" -include /var/folders/Ev/EvwqP1w4HKSQHnU2UprIfE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WhatATool_Prefix-caclcdlaluirgifbfopomcuhoemf/WhatATool_Prefix.pch -c "/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/WhatATool.m" -o "/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/build/WhatATool.build/Debug/WhatATool.build/Objects-normal/x86_64/WhatATool.o"1#
-
-CLd "/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/build/Debug/WhatATool" normal x86_64
-r0
-
-CProcessPCH /var/folders/Ev/EvwqP1w4HKSQHnU2UprIfE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WhatATool_Prefix-caclcdlaluirgifbfopomcuhoemf/WhatATool_Prefix.pch.gch WhatATool_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s278216772.178424
-e278216799.661111
-r1
-xProcessPCH
-x/var/folders/Ev/EvwqP1w4HKSQHnU2UprIfE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WhatATool_Prefix-caclcdlaluirgifbfopomcuhoemf/WhatATool_Prefix.pch.gch
-xWhatATool_Prefix.pch
-xnormal
-xx86_64
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@31"Precompile WhatATool_Prefix.pch278216772#278216799#0(0"0(0#0#84"/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/WhatATool_Prefix.pch7518530275805324288#1664"    cd "/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/build/WhatATool.build/Debug/WhatATool.build/WhatATool-generated-files.hmap" "-I/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/build/WhatATool.build/Debug/WhatATool.build/WhatATool-own-target-headers.hmap" "-I/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/build/WhatATool.build/Debug/WhatATool.build/WhatATool-all-target-headers.hmap" -iquote "/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/build/WhatATool.build/Debug/WhatATool.build/WhatATool-project-headers.hmap" "-F/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/build/Debug" "-I/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/build/Debug/include" "-I/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/build/WhatATool.build/Debug/WhatATool.build/DerivedSources/x86_64" "-I/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/build/WhatATool.build/Debug/WhatATool.build/DerivedSources" -c "/Users/pawel/Desktop/iPhone Assignements/Assignment 2/WhatATool/WhatATool_Prefix.pch" -o /var/folders/Ev/EvwqP1w4HKSQHnU2UprIfE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/WhatATool_Prefix-caclcdlaluirgifbfopomcuhoemf/WhatATool_Prefix.pch.gch0#
-

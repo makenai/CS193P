@@ -1,4 +1,5 @@
 #import <Foundation/Foundation.h>
+#import "PolygonShape.h"
 
 void PrintPathInfo() {
 	NSString *path = @"~";
@@ -50,6 +51,19 @@ void PrintIntrospectionInfo() {
 	}
 }
 
+void PrintPolygonInfo() {
+	NSMutableArray *polyList = [NSMutableArray new];
+	[polyList addObject:[[PolygonShape alloc] initWithNumberOfSides:4 minimumNumberOfSides:3 maximumNumberOfSides:7]];
+	[polyList addObject:[[PolygonShape alloc] initWithNumberOfSides:6 minimumNumberOfSides:5 maximumNumberOfSides:9]];
+	[polyList addObject:[[PolygonShape alloc] initWithNumberOfSides:12 minimumNumberOfSides:9 maximumNumberOfSides:12]];
+	for (PolygonShape *poly in polyList) {
+		NSLog(@"%@", poly);
+		poly.numberOfSides = 10;
+		[poly release];
+	}
+	[polyList release];
+}
+
 int main (int argc, const char * argv[]) {
     NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
 
@@ -57,6 +71,7 @@ int main (int argc, const char * argv[]) {
 	PrintProcessInfo();
 	PrintBookmarkInfo();
 	PrintIntrospectionInfo();
+	PrintPolygonInfo();
 	
     [pool drain];
     return 0;

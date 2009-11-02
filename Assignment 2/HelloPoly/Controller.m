@@ -23,6 +23,7 @@
 	increaseButton.enabled = polygonShape.numberOfSides < polygonShape.maximumNumberOfSides;
 	decreaseButton.enabled = polygonShape.numberOfSides > polygonShape.minimumNumberOfSides;
 	numberOfSidesLabel.text = [NSString stringWithFormat:@"%d", polygonShape.numberOfSides];
+	[polygonView setNeedsDisplay];
 }
 
 - (void)awakeFromNib { // configure your polygon here

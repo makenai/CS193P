@@ -9,13 +9,15 @@
 #import <UIKit/UIKit.h>
 
 
-@interface PersonList : UIViewController {
+@interface PersonList : UITableViewController {
 	IBOutlet UIImageView *user1Image;
 	IBOutlet UILabel *user1Name;
 	IBOutlet UIImageView *user2Image;
 	IBOutlet UILabel *user2Name;
+	NSMutableArray *people;
 }
 
--(IBAction)showDetail:(id)sender;
+-(void)loadPeople;
+-(UIImage *)getImage:(NSString *)url;
 
 @end

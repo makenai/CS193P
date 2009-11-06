@@ -7,19 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Person.h"
 
 
-@interface PersonDetail : UIViewController {
-	IBOutlet UIImageView *userImageField;
-	IBOutlet UILabel *userNameField;
-	IBOutlet UITextView *userStatusField;
-	NSString *userName;
-	UIImage *userImage;	
-	NSString *userStatus;
+@interface PersonDetail : UITableViewController {
+	Person *person;
 }
 
-@property (retain) NSString *userName;
-@property (retain) UIImage *userImage;
-@property (retain) NSString *userStatus;
+@property (retain) Person *person;
 
 @end

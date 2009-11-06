@@ -15,12 +15,11 @@
 
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {
-	PersonList *personList = [[PersonList alloc]initWithNibName:@"PersonList" bundle:nil];
+	PersonList *personList = [[PersonList alloc] initWithStyle:UITableViewStylePlain];
 	[navController pushViewController:personList animated:NO];
 	[window addSubview:navController.view];
     [window makeKeyAndVisible];
 }
-
 
 - (void)dealloc {
     [window release];

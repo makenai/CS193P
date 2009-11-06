@@ -8,21 +8,30 @@
 
 #import "PersonList.h"
 #import "PersonDetail.h"
+#import "Person.h"
+#import "TwitterHelper.h"
 
 
 @implementation PersonList
 
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+	return [people count];
+}
 
--(IBAction)showDetail:(id)sender {
-	PersonDetail *detail = [[PersonDetail alloc] initWithNibName:@"PersonDetail" bundle:nil];
-	if ([sender tag] == 1) {
-		detail.userName = user1Name.text;
-		detail.userImage = user1Image.image;
-	} else if ([sender tag] == 2) {
-		detail.userName = user2Name.text;
-		detail.userImage = user2Image.image;
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Person"];
+	if ( cell == nil ) {
+		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Person"];
 	}
-	detail.userStatus = [[[NSString alloc] initWithFormat:@"Just being %@!", detail.userName] autorelease];
+	cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+	cell.textLabel.text = [[people objectAtIndex:indexPath.row] displayName];
+	cell.imageView.image = [[people objectAtIndex:indexPath.row] image]; 
+	return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	PersonDetail *detail = [[PersonDetail alloc] initWithStyle:UITableViewStyleGrouped];
+	detail.person = [people objectAtIndex:indexPath.row];
 	[[self navigationController] pushViewController:detail animated:YES];
 	[detail release];
 }
@@ -30,6 +39,44 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	self.title = @"People";
+	[self loadPeople];
+}
+
+- (void)loadPeople {
+	people = [[NSMutableArray alloc] init];
+	NSArray *userNames = [[NSArray alloc] 
+						  initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"TwitterUsers" ofType:@"plist"]];
+	for (NSString *userName in userNames) {
+		Person *person = [Person new];
+		@try {
+			NSDictionary *user = [TwitterHelper fetchInfoForUsername:userName];
+			person.username = [user objectForKey:@"screen_name"];
+			person.displayName = [user objectForKey:@"name"];
+			person.image = [self getImage:[user objectForKey:@"profile_image_url"]];
+			person.statuses = [TwitterHelper fetchTimelineForUsername:userName];
+			[people addObject:person];
+		}
+		@catch (NSException * e) {
+			NSLog(@"Error loading user %@", userName);
+		}
+		[person release];
+	}
+	[userNames release];
+}
+						
+- (UIImage *)getImage:(NSString *)url {
+	NSData *urlData = [NSData dataWithContentsOfURL:[NSURL URLWithString:url]];
+	UIImage *image = [UIImage imageWithData:urlData];
+	if ( image == nil ) {
+		NSLog(@"Null image");
+		image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"default_profile_5_bigger" ofType:@"png"]];
+	}
+	return image;
+}
+
+- (void)dealloc {
+	[super dealloc];
+	[people release];
 }
 
 @end
